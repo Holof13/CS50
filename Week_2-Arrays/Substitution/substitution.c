@@ -22,7 +22,7 @@ int main(int argc, string argv[])
 
     // Change this if you want the user to provide
     // their own text.
-    string plaintext = test_string;
+    string plaintext = get_string("Plaintext: ");
 
     // We change all the characters in the key
     // to lowercase.
@@ -32,7 +32,7 @@ int main(int argc, string argv[])
     // the text in.
     string ciphertext;
 
-    printf("Plaintext: %s\nCiphertext: ", plaintext);
+    printf(" \nCiphertext: ", plaintext);
 
     // For every character in plaintext, cipher and 
     // show it to the user.
@@ -73,7 +73,6 @@ char cipher(char c, string key)
             // but upper case.
             if (c_case)
             {   
-
                 return key[index];
             }
             else 
